@@ -8,7 +8,9 @@
 import Foundation
 
 protocol WelcomePresenterProtocol: AnyObject {
-    
+    func viewDidLoaded()
+    func didLoad(date: String?)
+    func didLoad(weather: Int? )
 }
 
 class WelcomePresenter {
@@ -23,5 +25,17 @@ class WelcomePresenter {
 }
 
 extension WelcomePresenter: WelcomePresenterProtocol {
+    func didLoad(date: String?) {
+	   view?.showDate(date: date ?? "No date")
+    }
     
+    func didLoad(weather: Int?) {
+	   let temperature = weather?.description ?? "no temperature"
+	   view?.showWeather(weather: temperature)
+    }
+    
+    func viewDidLoaded() {
+	   interactor.loadDate()
+	   interactor.loadWeather()
+    }
 }

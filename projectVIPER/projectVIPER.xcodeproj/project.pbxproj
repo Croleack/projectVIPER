@@ -91,7 +91,6 @@
 			children = (
 				E93A63BC2B1CE77E007AD7EF /* LaunchScreen.storyboard */,
 				E93A63BA2B1CE77E007AD7EF /* Assets.xcassets */,
-				E93A63B72B1CE77C007AD7EF /* Main.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -113,6 +112,7 @@
 				E93A63D02B1CEF10007AD7EF /* Router */,
 				E93A63CD2B1CEDA4007AD7EF /* Presenter */,
 				E93A63B52B1CE77C007AD7EF /* ViewController.swift */,
+				E93A63B72B1CE77C007AD7EF /* Main.storyboard */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
