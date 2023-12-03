@@ -15,6 +15,10 @@
 		E93A63BE2B1CE77E007AD7EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E93A63BC2B1CE77E007AD7EF /* LaunchScreen.storyboard */; };
 		E93A63C92B1CE870007AD7EF /* DateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A63C82B1CE870007AD7EF /* DateService.swift */; };
 		E93A63CB2B1CE8AD007AD7EF /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A63CA2B1CE8AD007AD7EF /* WeatherService.swift */; };
+		E93A63CF2B1CEDBA007AD7EF /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A63CE2B1CEDBA007AD7EF /* WelcomePresenter.swift */; };
+		E93A63D22B1CEF21007AD7EF /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A63D12B1CEF21007AD7EF /* WelcomeRouter.swift */; };
+		E93A63D52B1CEFC9007AD7EF /* WelcomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A63D42B1CEFC9007AD7EF /* WelcomeInteractor.swift */; };
+		E93A63D82B1CF05E007AD7EF /* WelcomeModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A63D72B1CF05E007AD7EF /* WelcomeModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		E93A63BF2B1CE77E007AD7EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E93A63C82B1CE870007AD7EF /* DateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateService.swift; sourceTree = "<group>"; };
 		E93A63CA2B1CE8AD007AD7EF /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		E93A63CE2B1CEDBA007AD7EF /* WelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
+		E93A63D12B1CEF21007AD7EF /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
+		E93A63D42B1CEFC9007AD7EF /* WelcomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
+		E93A63D72B1CF05E007AD7EF /* WelcomeModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +68,10 @@
 		E93A63B02B1CE77C007AD7EF /* projectVIPER */ = {
 			isa = PBXGroup;
 			children = (
+				E93A63CC2B1CEB84007AD7EF /* Welcome */,
 				E93A63C72B1CE861007AD7EF /* API */,
 				E93A63C52B1CE81C007AD7EF /* Application */,
 				E93A63C62B1CE828007AD7EF /* Resources */,
-				E93A63B52B1CE77C007AD7EF /* ViewController.swift */,
 				E93A63BF2B1CE77E007AD7EF /* Info.plist */,
 			);
 			path = projectVIPER;
@@ -95,6 +103,50 @@
 				E93A63CA2B1CE8AD007AD7EF /* WeatherService.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		E93A63CC2B1CEB84007AD7EF /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				E93A63D62B1CF037007AD7EF /* ModuleBuilder */,
+				E93A63D32B1CEFB2007AD7EF /* Interactor */,
+				E93A63D02B1CEF10007AD7EF /* Router */,
+				E93A63CD2B1CEDA4007AD7EF /* Presenter */,
+				E93A63B52B1CE77C007AD7EF /* ViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		E93A63CD2B1CEDA4007AD7EF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E93A63CE2B1CEDBA007AD7EF /* WelcomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E93A63D02B1CEF10007AD7EF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E93A63D12B1CEF21007AD7EF /* WelcomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E93A63D32B1CEFB2007AD7EF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E93A63D42B1CEFC9007AD7EF /* WelcomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E93A63D62B1CF037007AD7EF /* ModuleBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				E93A63D72B1CF05E007AD7EF /* WelcomeModuleBuilder.swift */,
+			);
+			path = ModuleBuilder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,8 +221,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E93A63CB2B1CE8AD007AD7EF /* WeatherService.swift in Sources */,
+				E93A63D52B1CEFC9007AD7EF /* WelcomeInteractor.swift in Sources */,
+				E93A63CF2B1CEDBA007AD7EF /* WelcomePresenter.swift in Sources */,
 				E93A63B62B1CE77C007AD7EF /* ViewController.swift in Sources */,
 				E93A63B22B1CE77C007AD7EF /* AppDelegate.swift in Sources */,
+				E93A63D82B1CF05E007AD7EF /* WelcomeModuleBuilder.swift in Sources */,
+				E93A63D22B1CEF21007AD7EF /* WelcomeRouter.swift in Sources */,
 				E93A63C92B1CE870007AD7EF /* DateService.swift in Sources */,
 				E93A63B42B1CE77C007AD7EF /* SceneDelegate.swift in Sources */,
 			);

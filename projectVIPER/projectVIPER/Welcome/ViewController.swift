@@ -7,13 +7,21 @@
 
 import UIKit
 
+protocol WelcomeViewProtocol: AnyObject {
+    
+}
+
 class ViewController: UIViewController {
+    
+    var presenter: WelcomePresenterProtocol?
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 	    view.backgroundColor = .yellow
 	}
+}
 
-
+extension ViewController: WelcomeViewProtocol {
+    
 }
 
