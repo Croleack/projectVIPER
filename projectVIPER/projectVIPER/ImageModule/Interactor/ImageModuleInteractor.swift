@@ -14,9 +14,9 @@ protocol ImageModuleInteractorProtocol: AnyObject {
 class ImageModuleInteractor: ImageModuleInteractorProtocol {
 
     weak var presenter: ImageModulePresenterProtocol?
-	let temperature: Int
+	let temperature: Double
     
-    init(temperature: Int) {
+    init(temperature: Double) {
 	   self.temperature = temperature
     }
     

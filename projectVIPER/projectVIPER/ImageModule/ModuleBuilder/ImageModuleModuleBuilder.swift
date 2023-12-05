@@ -8,7 +8,7 @@
 import UIKit
 
 class ImageModuleModuleBuilder {
-    static func build(temperature: Int) -> ImageModuleViewController {
+    static func build(temperature: Double) -> ImageModuleViewController {
 	   let interactor = ImageModuleInteractor(temperature: temperature )
         let router = ImageModuleRouter()
         let presenter = ImageModulePresenter(interactor: interactor, router: router)

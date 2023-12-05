@@ -45,17 +45,27 @@
                                     <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mEu-WW-1FM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature Moscow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGw-nl-foB">
+                                <rect key="frame" x="114" y="327" width="165" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ji4-Mz-ALv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6nb-l9-3eH"/>
+                            <constraint firstItem="ji4-Mz-ALv" firstAttribute="top" secondItem="TGw-nl-foB" secondAttribute="bottom" constant="87" id="71j-sX-oxD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lRf-ti-qGs" secondAttribute="trailing" constant="138" id="7h1-AS-rxd"/>
                             <constraint firstItem="zvp-Xt-PU8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7rt-3o-UgW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lRf-ti-qGs" secondAttribute="bottom" constant="70" id="O20-NV-4nH"/>
-                            <constraint firstItem="ji4-Mz-ALv" firstAttribute="top" secondItem="zvp-Xt-PU8" secondAttribute="bottom" constant="185" id="YsV-OQ-qQF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TGw-nl-foB" secondAttribute="trailing" constant="114" id="Uju-nd-JfZ"/>
+                            <constraint firstItem="TGw-nl-foB" firstAttribute="top" secondItem="zvp-Xt-PU8" secondAttribute="bottom" constant="77" id="Uqb-Jh-Y5Z"/>
+                            <constraint firstItem="TGw-nl-foB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="dgS-2R-FdX"/>
                             <constraint firstItem="zvp-Xt-PU8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="170" id="eTj-FE-Ssg"/>
                             <constraint firstItem="lRf-ti-qGs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="mkT-gB-mSZ"/>
+                            <constraint firstItem="TGw-nl-foB" firstAttribute="centerX" secondItem="zvp-Xt-PU8" secondAttribute="centerX" id="rtf-fO-bvx"/>
                         </constraints>
                     </view>
                     <connections>

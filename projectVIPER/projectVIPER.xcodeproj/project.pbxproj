@@ -173,14 +173,54 @@
 		E93A63E52B1E3CA8007AD7EF /* ImageModule */ = {
 			isa = PBXGroup;
 			children = (
-				E93A63DB2B1E3C92007AD7EF /* ImageModuleModuleBuilder.swift */,
-				E93A63DC2B1E3C92007AD7EF /* ImageModulePresenter.swift */,
-				E93A63DD2B1E3C92007AD7EF /* ImageModuleRouter.swift */,
-				E93A63DE2B1E3C92007AD7EF /* ImageModuleViewController.swift */,
-				E93A63DF2B1E3C92007AD7EF /* ImageModuleInteractor.swift */,
-				E9AD48A52B1F62D200954161 /* ImageModule.storyboard */,
+				E9AD48A72B1F912C00954161 /* Views */,
+				E9AD48A82B1F913D00954161 /* Interactor */,
+				E9AD48A92B1F915600954161 /* Presenter */,
+				E9AD48AA2B1F916F00954161 /* ModuleBuilder */,
+				E9AD48AB2B1F918800954161 /* Router */,
 			);
 			path = ImageModule;
+			sourceTree = "<group>";
+		};
+		E9AD48A72B1F912C00954161 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9AD48A52B1F62D200954161 /* ImageModule.storyboard */,
+				E93A63DE2B1E3C92007AD7EF /* ImageModuleViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E9AD48A82B1F913D00954161 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E93A63DF2B1E3C92007AD7EF /* ImageModuleInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E9AD48A92B1F915600954161 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E93A63DC2B1E3C92007AD7EF /* ImageModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E9AD48AA2B1F916F00954161 /* ModuleBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				E93A63DB2B1E3C92007AD7EF /* ImageModuleModuleBuilder.swift */,
+			);
+			path = ModuleBuilder;
+			sourceTree = "<group>";
+		};
+		E9AD48AB2B1F918800954161 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E93A63DD2B1E3C92007AD7EF /* ImageModuleRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
