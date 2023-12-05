@@ -11,6 +11,7 @@ protocol WelcomePresenterProtocol: AnyObject {
     func viewDidLoaded()
     func didLoad(date: String?)
     func didLoad(weather: Int? )
+    func didTapImageButton()
 }
 
 class WelcomePresenter {
@@ -25,6 +26,11 @@ class WelcomePresenter {
 }
 
 extension WelcomePresenter: WelcomePresenterProtocol {
+    func didTapImageButton() {
+	   let temperature = interactor.temperature
+	   router.openImage(for: temperature)
+    }
+    
     func didLoad(date: String?) {
 	   view?.showDate(date: date ?? "No date")
     }

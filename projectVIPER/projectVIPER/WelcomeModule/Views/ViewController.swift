@@ -24,6 +24,10 @@ class ViewController: UIViewController {
 	    view.backgroundColor = .yellow
 	    presenter?.viewDidLoaded()
 	}
+    
+    @IBAction func didTapButton(_ sender: Any) {
+	   presenter?.didTapImageButton()
+    }
 }
 
 extension ViewController: WelcomeViewProtocol {
