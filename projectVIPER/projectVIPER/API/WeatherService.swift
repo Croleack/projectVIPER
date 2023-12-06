@@ -69,7 +69,7 @@ final class WeatherService: IWeatherServiceProtocol {
 	   let task = URLSession.shared.dataTask(with: request) { data, response, error in
 		  guard error == nil,
 			   let data else {
-			 print(error?.localizedDescription)
+			 print(error?.localizedDescription as Any)
 			 return
 		  }
 		  completionHandler(data)
